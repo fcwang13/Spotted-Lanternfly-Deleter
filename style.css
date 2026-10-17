@@ -1,0 +1,11 @@
+body {
+    border: 5px solid white;
+    padding: 10px;
+    background-color: lightcoral;
+    font-family: Courier New, monospace;
+}
+
+h1 {
+    /*border: 2px solid white;*/
+    padding: 10px;
+}
