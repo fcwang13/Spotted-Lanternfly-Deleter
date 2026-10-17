@@ -3,7 +3,7 @@
 <html>
 <head>
     <title>Log Lanternfly Death</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <h1>Log Lanternfly Death</h1>
@@ -15,7 +15,28 @@
         <input type="text" id="location" name="location"><br><br>
         <label for="date">Date:</label>
         <input type="date" id="date" name="date"><br><br>
-        <input type="submit" value="Submit">
+        <h2>Upload Image of Lanternfly</h2>
+        <form>
+            <input type="file" id="fileUpload" class="file-upload"
+                name="fileUpload">
+            <label for="fileUpload" class="custom-button">
+                Choose File
+            </label>
+            <input type="submit" value="Upload">
+        </form>
+        <br>
+        <input type="submit" value="Submit" id="submit">
     </form>
+
+    
 </body>
+
+<script>
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const location = document.getElementById('location').value;
+        const date = document.getElementById('date').value;
+        console.log(`Location: ${location}, Date: ${date}`);
+    });
+</script>
 </html>
