@@ -17,5 +17,38 @@
         <input type="date" id="date" name="date"><br><br>
         <input type="submit" value="Submit">
     </form>
+
+    <!-- USER UPLOAD IMAGES -->
+    <style>
+        .file-upload {
+            display: none;
+        }
+
+        .custom-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .custom-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+    <h1>Upload Your File</h1>
+    <form>
+        <input type="file" id="fileUpload" class="file-upload"
+            name="fileUpload">
+        <label for="fileUpload" class="custom-button">
+            Choose File
+        </label>
+        <input type="submit" value="Upload">
+    </form>
+
+    
+    
 </body>
 </html>
