@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotted Lanternfly Deleter</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+      /*CSS here*/
+
+      body {
+        border: 5px solid white;
+        padding: 10px;
+        background-color: lightcoral;
+        font-family: Courier New, monospace;
+      }
+
+      h1 {
+          padding: 10px;
+      }
+    </style>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> 
+</head>
+
+<body>
+    <h1>Spotted Lanternfly Deleter</h1>
+    <p>Spotted lanternfly (Lycorma delicatula) is an invasive planthopper that feeds on a wide range of plants, including grapevines, hops, stone fruit trees, and hardwood trees. 
+      When the spotted lanternfly feeds, it excretes a sticky, sugary fluid that promotes sooty mold growth, which can further damage plants. 
+      Its preferred host is tree-of-heaven (Ailanthus altissima), and today 19 States and the District of Columbia have some degree of infestation. <b>(USDA)</b></p>
+
+    <div id="map" style="height: 400px"></div>
+
+    <script>
+      /*Javascript here*/
+
+        const map = L.map('map').setView([38.9874, -76.9421], 14.5);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+      /*Make a mark when user clicks on map*/
+      function onMapClick(e){
+        var location = L.latLng(e.latlng);
+        L.marker([location.lat, location.lng])
+            .addTo(map)
+            .bindPopup('Lanternfly Spotting');
+      }
+      map.on('click', onMapClick);
+
+    </script>
+</body>
+</html>
