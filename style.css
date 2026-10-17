@@ -1,11 +1,28 @@
 body {
     border: 5px solid white;
+    border-radius: 5px;
     padding: 10px;
     background-color: lightcoral;
-    font-family: Courier New, monospace;
+    font-family: Courier, monospace;
 }
 
 h1 {
-    /*border: 2px solid white;*/
     padding: 10px;
+}
+
+.file-upload{
+    display: none;
+}
+
+.custom-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.custom-button:hover {
+    background-color: #45a049;
 }
