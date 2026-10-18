@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rewards | Spotted Lanternfly Deleter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style4Rewards.css">
+</head>
+<body>
+    <header class="page-header">
+        <span class="header-label">COMMUNITY REWARDS
+    </header>
+
+    <main class="rewards-main">
+        <p class="eyebrow">SPOT · REPORT · EARN</p>
+        <h1>How It Works</h1>
+        <p class="intro">Earn points by reporting spotted lanternfly sightings. Put them toward something useful, local, or just for fun.</p>
+
+        <section class="conversion-section" aria-labelledby="conversion-title">
+            <div class="section-heading">
+                <h2 id="conversion-title">Point conversions</h2>
+                
+            </div>
+            <div class="conversion-list">
+                <div class="conversion-row">
+                    <span class="reward-name">Dining Dollars</span>
+                    <span class="reward-rate"><strong>10</strong><span>points</span><span class="equals">=</span><strong>1</strong><span>Dining Dollar</span></span>
+                </div>
+                <div class="conversion-row">
+                    <span class="reward-name">Merchandise</span>
+                    <span class="reward-rate"><strong>50</strong><span>points</span><span class="equals">=</span><strong>1</strong><span>item</span></span>
+                </div>
+                <div class="conversion-row">
+                    <span class="reward-name">Exclusive content</span>
+                    <span class="reward-rate"><strong>100</strong><span>points</span><span class="equals">=</span><strong>1</strong><span>unlock</span></span>
+                </div>
+            </div>
+        </section>
+
+        <p class="page-note">They died for a good cause.</p>
+    </main>
+</body>
+</html>
+
+
+
