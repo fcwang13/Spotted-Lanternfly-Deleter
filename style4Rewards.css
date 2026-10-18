@@ -1,0 +1,40 @@
+* { box-sizing: border-box; }
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    border: 5px solid white;
+    padding: 0 28px 36px;
+    background-color: lightcoral;
+    color: #3b2d2a;
+    font: 16px "DM Sans", "Trebuchet MS", sans-serif;
+}
+
+.page-header, .rewards-main { width: min(100%, 960px); margin: 0 auto; }
+.page-header { min-height: 66px; display: flex; align-items: center; justify-content: flex-end; border-bottom: 1px solid rgb(73 47 43 / 22%); }
+.header-label { color: #704b48; font-size: 10px; font-weight: 700; letter-spacing: 1.1px; }
+.rewards-main { max-width: 700px; padding-top: 68px; }
+.eyebrow, .page-note { color: #763f3b; text-align: center; }
+.eyebrow { margin: 0 0 12px; font-size: 10px; font-weight: 700; letter-spacing: 1.4px; }
+h1 { margin: 0; font: 800 42px/1.15 "Manrope", "Trebuchet MS", sans-serif; text-align: center; }
+.intro { max-width: 500px; margin: 15px auto 0; color: #5b4845; font-size: 15px; line-height: 1.65; text-align: center; }
+.conversion-section { margin-top: 46px; }
+.section-heading { padding-bottom: 11px; border-bottom: 1px solid rgb(73 47 43 / 22%); }
+.section-heading h2 { margin: 0; font: 700 18px "Manrope", "Trebuchet MS", sans-serif; }
+.conversion-row { min-height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px; border-bottom: 1px solid rgb(73 47 43 / 22%); }
+.reward-name { font-size: 15px; font-weight: 600; }
+.reward-rate { display: inline-flex; align-items: baseline; gap: 6px; color: #5b4845; font-size: 11px; white-space: nowrap; }
+.reward-rate strong { color: #763f3b; font: 700 18px "Manrope", "Trebuchet MS", sans-serif; }
+.equals { margin: 0 3px; color: #704b48; }
+.page-note { margin: 28px 0 0; color: #704b48; font-size: 12px; }
+
+@media (max-width: 560px) {
+    body { padding: 0 16px 28px; }
+    .page-header { min-height: 58px; }
+    .rewards-main { padding-top: 46px; }
+    h1 { font-size: 36px; }
+    .intro { font-size: 14px; }
+    .conversion-section { margin-top: 36px; }
+    .conversion-row { align-items: flex-start; flex-direction: column; justify-content: center; gap: 5px; padding: 12px 0; }
+}
